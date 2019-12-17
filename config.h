@@ -79,5 +79,5 @@ static const struct arg args[] = {
 	{ printf, 		      " | " },
 	//{ vol_perc ,"%s%%",	      "/dev/mixer"},
 	//{ printf, 		      " | " },
-	{ datetime, "%s",           "%a, %h %d %I:%m" },
+	{ datetime, "%s",           "%a, %h %d %I:%M" },
 };
