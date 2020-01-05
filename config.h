@@ -63,6 +63,8 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+	{ keyboard_indicators,   "%s", "c"},
+	{ printf, 		      " | " },
 	{ keymap,"%s" ,		      "NULL" },
 	{ printf, 		      " | " },
 	{ battery_perc, "bat0: %s%% ",      "BAT0" },
@@ -71,13 +73,13 @@ static const struct arg args[] = {
 	{temp, "cpu0: %s°C ",  "/sys/class/thermal/thermal_zone0/temp" },
 	{temp, "cpu1: %s°C",  "/sys/class/thermal/thermal_zone1/temp" },
 	{ printf, 		      " | " },
-	{ uptime,"uptime: %s", NULL	      },
-	{ printf, 		      " | " },
+	/* { uptime,"uptime: %s", NULL	      }, */
+	/* { printf, 		      " | " }, */
 	{ wifi_essid, "essid: %s",         "wlp3s0"},
 	{ printf, 	       	        ": " },
 	{ wifi_perc, "%s%%",          "wlp3s0"},
 	{ printf, 		      " | " },
-	//{ vol_perc ,"%s%%",	      "/dev/mixer"},
-	//{ printf, 		      " | " },
+	{ custom_volume ,"volume: %s",	NULL},
+	{ printf, 		      " | " },
 	{ datetime, "%s",           "%a, %h %d %I:%M" },
 };

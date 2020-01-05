@@ -9,6 +9,9 @@ const char *battery_remaining(const char *);
 const char *cpu_freq(void);
 const char *cpu_perc(void);
 
+/* custom volume */
+const char *custom_volume(void);
+
 /* datetime */
 const char *datetime(const char *fmt);
 
